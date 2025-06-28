@@ -1,0 +1,6 @@
+Title-font: Cosy BC
+Subtitle-font: Arima Madurai
+
+Main-light: #FFEAAE
+Main-body: #7C4A32
+Main-dark: #1D1615

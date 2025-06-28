@@ -1,0 +1,28 @@
+*, ::before, ::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e8e8e8;
+}
+
+#header {
+  display: flex;
+  height: 95px;
+  width: 100vw;
+  align-items: center;
+  background-color: #d9a74a;
+}
+#header ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+#logo {
+  width: 80px;
+  height: auto;
+}/*# sourceMappingURL=style.css.map */
