@@ -1,3 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  font-family: "Binate";
+  src: url("../fonts/BinateDisplay-Regular.woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Binate-Bold";
+  src: url("../fonts/BinateDisplay-Bold.woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+/*Declared Variables*/
 *, ::before, ::after {
   padding: 0;
   margin: 0;
@@ -8,21 +22,51 @@ body {
   background-color: #e8e8e8;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #C93510;
+}
+
 #header {
   display: flex;
   height: 95px;
   width: 100vw;
+  justify-content: center;
   align-items: center;
   background-color: #d9a74a;
 }
+#header nav {
+  width: 65%;
+}
 #header ul {
+  font-family: "Roboto", serif;
+  font-weight: 600;
+  font-size: 18px;
   display: flex;
+  justify-content: space-between;
   list-style: none;
-  gap: 1rem;
-  margin-left: auto;
+  padding-left: 60%;
 }
 
-#logo {
-  width: 80px;
+#brand {
+  width: 330px;
+  height: 100%;
+  position: relative;
+}
+#brand h1 {
+  font-family: "Binate-Bold", serif;
+  color: #251507;
+  text-align: end;
+  padding: 15px 0px;
+}
+#brand #logo {
+  width: 100px;
   height: auto;
+  position: absolute;
+  top: 1;
+  left: -10;
 }/*# sourceMappingURL=style.css.map */
