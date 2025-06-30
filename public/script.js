@@ -4,7 +4,7 @@ const navlinks = document.querySelectorAll("#nav-link");
 
 let menuOpen = false;
 
-// Toggle menu
+
 burger.addEventListener("click", () => {
   nav.classList.toggle("nav-menu");
   menuOpen = !menuOpen;
