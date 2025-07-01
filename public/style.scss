@@ -15,12 +15,13 @@
 }
 
 
-
 /*Declared Variables*/
 $primary-color: #251507;
 $secondary-color: #D9A74A;
 $accent-color: #C93510;
 $accent-dark-color: #9C321F;
+$black: #272727;
+$white: #FFF8F8;
 $font-primary: 'Binate', serif;
 $font-primary-bold: 'Binate-Bold', serif;
 $font-secondary: 'Roboto', serif;
@@ -172,7 +173,7 @@ a:hover{
     flex-direction: column;
     flex-grow: 0;
     width: 100vw;
-    height: 100vh;
+    height: 98vh;
     background-color: rgba(251, 237, 216, 0.8);
     position: relative;
     padding: 0px 0px;
@@ -192,18 +193,20 @@ a:hover{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0% 25%;
+    background-clip: content-box;
     z-index: -1;
 }
 
 #headline {
     @include primary-header;
-    width: 920px;
+    width: 1000px;
     height: auto;
     color: #5E3115;
-    font-size: 60px;
+    font-size: 66px;
     text-align: center;
-    line-height: 80px;
-    margin: 80px auto;
+    line-height: 90px;
+    letter-spacing: 5px;
+    margin: 90px auto;
 
 }
 
@@ -211,20 +214,62 @@ button{
     all: unset;
     cursor: pointer;
     width: 320px;
-    height: 80px;
+    height: 70px;
     margin: 40px auto;
     background-color: $accent-dark-color;
     font-family: $font-primary-bold;
-    padding: 0px;
     font-size: 38px;
-    color: #a4a4a4;
     text-align: center;
+    color: #fff8f8;
     border-radius: 50px;
-    box-sizing: border-box;
+    padding-bottom: 10px;
 }
 
 #sub-headline{
-    font-family: $font-secondary;
+    @include primary-header;
     font-size: 20px;
     text-align: center;
+}
+
+#basket{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    padding: 80px;
+
+    h1 {
+        @include primary-header;
+        color: $accent-color;
+        font-size: 55px;
+    }
+
+    h3 {
+        @include primary-header;
+        color: $black;
+        font-size: 40px;
+    }
+
+    ul{
+        list-style: none;
+        font-family: $font-primary;
+        font-style: italic;
+        font-size: 24px;
+        line-height: 50px;
+        letter-spacing: 2px;
+    }
+
+    img{
+        content: '';
+        height: 650px;
+        width: 560px;
+        position: absolute;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 30px;
+        top: 0;
+        right: 0;
+        margin-right: 120px;
+        margin-top: 45px;
+        box-shadow: 2px 2px 5px 2px rgba(10, 10, 10, 0.7);
+    }
 }

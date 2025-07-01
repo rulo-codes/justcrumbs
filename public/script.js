@@ -1,5 +1,10 @@
+import animate from '../node_modules/animejs/lib/anime.esm';
+
+const animate = anime;
+
 const burger = document.querySelector("#burger");
 const nav = document.querySelector("#navLinks");
+
 const navlinks = document.querySelectorAll("#nav-link");
 
 let menuOpen = false;
