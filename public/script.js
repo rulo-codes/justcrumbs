@@ -32,6 +32,15 @@ navlinks.forEach(link => {
   });
 });
 
+document.body.addEventListener("mousemove", () => {
+    if(!cookieOpen && !coffeeOpen){
+        cookieOpen = true;
+        coffeeOpen = true;
+        cookies.classList.remove("hide");
+        coffee.classList.remove("hide");
+    }
+});
+
 
 menuCover.forEach(div => {
 
