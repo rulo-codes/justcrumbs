@@ -144,6 +144,7 @@ a:hover {
   position: relative;
   padding: 0px 0px;
 }
+
 #bg-img {
   width: 100%;
   height: 100%;
@@ -194,16 +195,22 @@ button {
 }
 
 #basket {
+  display: flex;
+  flex-wrap: wrap;
   width: 100vw;
   height: 100vh;
   position: relative;
-  padding: 80px;
+  justify-content: center;
 }
 #basket h1 {
   font-family: "Binate-Bold", serif;
   color: #251507;
   color: #C93510;
+  width: 100%;
   font-size: 55px;
+  text-align: center;
+  margin-top: 40px;
+  background: white;
 }
 #basket h3 {
   font-family: "Binate-Bold", serif;
@@ -215,23 +222,45 @@ button {
   list-style: none;
   font-family: "Binate", serif;
   font-style: italic;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 50px;
   letter-spacing: 2px;
 }
-#basket img {
+#basket .menu-placeholder {
+  position: relative;
+  width: 40%;
+  height: 75%;
+  background: white;
+  margin: 20px;
+  padding: 40px;
+  border-radius: 40px;
+}
+
+#menu-cover {
   content: "";
-  height: 650px;
-  width: 560px;
   position: absolute;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  border-radius: 30px;
+  font-family: "Binate", serif;
+  font-size: 50px;
+  text-align: center;
+  line-height: 550px;
+  letter-spacing: 10px;
+  width: 100%;
+  height: 100%;
   top: 0;
-  right: 0;
-  margin-right: 120px;
-  margin-top: 45px;
-  box-shadow: 2px 2px 5px 2px rgba(10, 10, 10, 0.7);
+  left: 0;
+  color: white;
+  background: #30261d;
+  border-radius: 40px;
+}
+
+.cookie-cover, .coffee-cover {
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.hide {
+  opacity: 0;
 }/*# sourceMappingURL=style.css.map */
