@@ -45,7 +45,7 @@ document.body.addEventListener("mousemove", () => {
 menuCover.forEach(div => {
 
   div.addEventListener("mouseover", () => {
-  div.addEventListener('click', () => {
+    div.addEventListener('click', () => {
         clearTimeout(timer);
         if(div.classList.contains("cookie-cover")){
           if(cookieOpen){
@@ -71,8 +71,8 @@ menuCover.forEach(div => {
           }
        
         }
-     div.addEventListener("transitionend", function handler(){
-      div.style.display = "none";
+      div.addEventListener("transitionend", function handler(){
+        div.style.display = "none";
       
           menuDiv.forEach(menu => {
               menu.addEventListener('mouseleave', () => {
@@ -87,9 +87,9 @@ menuCover.forEach(div => {
                   div.removeEventListener("transitionend", handler);
               });
           })
-    });
+        });
   
-  })
+    })
 
 
   })
