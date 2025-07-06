@@ -117,63 +117,7 @@ a:hover{
 }
 
 
-@media screen and (max-width: 1000px) {
-    #nav-list li{
-        margin: 0px 20px;
-    }
-}
 
-
-@media screen and (max-width: 760px) {
-
-    #burger{
-        display: flex;
-        user-select: none;
-    }
-
-    #nav-list ul {
-        display: none;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #nav-list ul.nav-menu {
-        display: flex;
-    }
-
-    #nav-list li {
-        margin: 40px 0;
-        font-size: 30px;
-    }
-
-    #brand {
-        width: 340px;
-
-        h1{
-            font-size: 30px;
-            margin-right: 35px;
-            margin-top: 5px;
-        }
-
-        #logo{
-            width: 80px;
-            margin-top: 7px;
-            margin-left: 10px
-        }
-    }
-
-    .nav-menu {
-        flex-direction: column;
-        align-items: center;
-        background: #d9a74a;
-        width: 100vw;
-        height: 100vh;
-        position: fixed;
-        top: 95px;
-        left: 0;
-    }
-    
-}
 
 #hero{
     display: flex;
@@ -203,23 +147,23 @@ a:hover{
 
 #headline {
     @include primary-header;
-    width: 1000px;
+    width: 1200px;
     height: auto;
     color: #5E3115;
-    font-size: 66px;
+    font-size: 77px;
     text-align: center;
-    line-height: 90px;
+    line-height: 100px;
     letter-spacing: 5px;
-    margin: 90px auto;
+    margin: 120px auto;
 
 }
 
-button{
+#hero button{
     all: unset;
     cursor: pointer;
     width: 320px;
     height: 70px;
-    margin: 40px auto;
+    margin: 60px auto;
     background-color: $accent-dark-color;
     font-family: $font-primary-bold;
     font-size: 38px;
@@ -248,7 +192,7 @@ button{
         @include primary-header;
         color: $accent-color;
         width: 100%;
-        font-size: 55px;
+        font-size: 60px;
         text-align: center;
         margin-top: 30px;
       
@@ -257,7 +201,7 @@ button{
     h3 {
         @include primary-header;
         color: $black;
-        font-size: 40px;
+        font-size: 50px;
         color: $primary-color;
     }
 
@@ -265,17 +209,17 @@ button{
         list-style: none;
         font-family: $font-primary;
         font-style: italic;
-        font-size: 20px;
-        line-height: 50px;
+        font-size: 26px;
+        line-height: 66px;
         letter-spacing: 2px;
     }
 
     .menu-placeholder{
         position: relative;
-        width: 40%;
-        height: 75%;
+        width: 680px;
+        height: 700px;
         background-color: rgb(230, 215, 188);
-        margin: 20px;
+        margin: 30px;
         padding: 40px;
         border-radius: 40px;
         
@@ -362,8 +306,7 @@ button{
 }
 
 .menu-item:hover{
-    background-color: rgb(223, 201, 169);
-    
+    background-color: rgb(247, 242, 235);
     cursor: default;
 }
 
@@ -373,4 +316,107 @@ button{
     background-color: $secondary-color;
     position: relative;
     margin-top: 40px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    #nav-list li{
+        margin: 0px 20px;
+    }
+}
+
+
+@media screen and (max-width: 760px) {
+
+    #burger{
+        display: flex;
+        user-select: none;
+    }
+
+    #nav-list ul {
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #nav-list ul.nav-menu {
+        display: flex;
+    }
+
+    #nav-list li {
+        margin: 40px 0;
+        font-size: 30px;
+    }
+
+    #brand {
+        width: 340px;
+
+        h1{
+            font-size: 30px;
+            margin-right: 35px;
+            margin-top: 5px;
+        }
+
+        #logo{
+            width: 80px;
+            margin-top: 7px;
+            margin-left: 10px
+        }
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        background: #d9a74a;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 95px;
+        left: 0;
+        z-index: 5;
+    }
+
+    #headline{
+        width: 90%;
+        font-size: 50px;
+        line-height: 70px;
+        letter-spacing: normal;
+    }
+    
+    #hero button{
+        scale: .7;
+        margin: 40px auto;
+    }
+
+    #basket{
+        height: auto;
+
+
+        h1{
+            font-size: 40px;
+        }
+
+        h3{
+            font-size: 26px;
+        }
+
+        ul{
+            font-size: 14px;
+            line-height: 30px;
+            padding: 4px;
+            margin-top: 12px;
+        }
+
+        .menu-placeholder{
+            width: 380px;
+            height: 400px;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        #menu-cover{
+            font-size: 40px;
+        }
+
+    }
 }

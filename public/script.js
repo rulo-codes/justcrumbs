@@ -82,7 +82,7 @@ menuCover.forEach(div => {
                     coffee.classList.remove("hide");
                     cookieOpen = true;
                     coffeeOpen = true;          
-                  }, 2000);
+                  }, 1500);
                   div.style.display = "flex";
                   div.removeEventListener("transitionend", handler);
               });

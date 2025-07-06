@@ -92,54 +92,6 @@ a:hover {
   margin-top: 8px;
 }
 
-@media screen and (max-width: 1000px) {
-  #nav-list li {
-    margin: 0px 20px;
-  }
-}
-@media screen and (max-width: 760px) {
-  #burger {
-    display: flex;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-            user-select: none;
-  }
-  #nav-list ul {
-    display: none;
-    justify-content: center;
-    align-items: center;
-  }
-  #nav-list ul.nav-menu {
-    display: flex;
-  }
-  #nav-list li {
-    margin: 40px 0;
-    font-size: 30px;
-  }
-  #brand {
-    width: 340px;
-  }
-  #brand h1 {
-    font-size: 30px;
-    margin-right: 35px;
-    margin-top: 5px;
-  }
-  #brand #logo {
-    width: 80px;
-    margin-top: 7px;
-    margin-left: 10px;
-  }
-  .nav-menu {
-    flex-direction: column;
-    align-items: center;
-    background: #d9a74a;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 95px;
-    left: 0;
-  }
-}
 #hero {
   display: flex;
   flex-direction: column;
@@ -168,22 +120,22 @@ a:hover {
 #headline {
   font-family: "Binate-Bold", serif;
   color: #251507;
-  width: 1000px;
+  width: 1200px;
   height: auto;
   color: #5E3115;
-  font-size: 66px;
+  font-size: 77px;
   text-align: center;
-  line-height: 90px;
+  line-height: 100px;
   letter-spacing: 5px;
-  margin: 90px auto;
+  margin: 120px auto;
 }
 
-button {
+#hero button {
   all: unset;
   cursor: pointer;
   width: 320px;
   height: 70px;
-  margin: 40px auto;
+  margin: 60px auto;
   background-color: #9C321F;
   font-family: "Binate-Bold", serif;
   font-size: 38px;
@@ -213,7 +165,7 @@ button {
   color: #251507;
   color: #C93510;
   width: 100%;
-  font-size: 55px;
+  font-size: 60px;
   text-align: center;
   margin-top: 30px;
 }
@@ -221,23 +173,23 @@ button {
   font-family: "Binate-Bold", serif;
   color: #251507;
   color: #272727;
-  font-size: 40px;
+  font-size: 50px;
   color: #251507;
 }
 #basket ul {
   list-style: none;
   font-family: "Binate", serif;
   font-style: italic;
-  font-size: 20px;
-  line-height: 50px;
+  font-size: 26px;
+  line-height: 66px;
   letter-spacing: 2px;
 }
 #basket .menu-placeholder {
   position: relative;
-  width: 40%;
-  height: 75%;
+  width: 680px;
+  height: 700px;
   background-color: rgb(230, 215, 188);
-  margin: 20px;
+  margin: 30px;
   padding: 40px;
   border-radius: 40px;
 }
@@ -324,7 +276,7 @@ button {
 }
 
 .menu-item:hover {
-  background-color: rgb(223, 201, 169);
+  background-color: rgb(247, 242, 235);
   cursor: default;
 }
 
@@ -334,4 +286,88 @@ button {
   background-color: #D9A74A;
   position: relative;
   margin-top: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+  #nav-list li {
+    margin: 0px 20px;
+  }
+}
+@media screen and (max-width: 760px) {
+  #burger {
+    display: flex;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+  }
+  #nav-list ul {
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  #nav-list ul.nav-menu {
+    display: flex;
+  }
+  #nav-list li {
+    margin: 40px 0;
+    font-size: 30px;
+  }
+  #brand {
+    width: 340px;
+  }
+  #brand h1 {
+    font-size: 30px;
+    margin-right: 35px;
+    margin-top: 5px;
+  }
+  #brand #logo {
+    width: 80px;
+    margin-top: 7px;
+    margin-left: 10px;
+  }
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    background: #d9a74a;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 95px;
+    left: 0;
+    z-index: 5;
+  }
+  #headline {
+    width: 90%;
+    font-size: 50px;
+    line-height: 70px;
+    letter-spacing: normal;
+  }
+  #hero button {
+    scale: 0.7;
+    margin: 40px auto;
+  }
+  #basket {
+    height: auto;
+  }
+  #basket h1 {
+    font-size: 40px;
+  }
+  #basket h3 {
+    font-size: 26px;
+  }
+  #basket ul {
+    font-size: 14px;
+    line-height: 30px;
+    padding: 4px;
+    margin-top: 12px;
+  }
+  #basket .menu-placeholder {
+    width: 380px;
+    height: 400px;
+    padding: 40px 30px;
+    text-align: center;
+  }
+  #basket #menu-cover {
+    font-size: 40px;
+  }
 }/*# sourceMappingURL=style.css.map */
