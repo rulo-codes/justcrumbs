@@ -320,6 +320,39 @@ a:hover {
      object-fit: cover;
 }
 
+#contact {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+  padding: 50px 80px;
+}
+#contact h1 {
+  font-family: "Binate-Bold", serif;
+  color: #251507;
+  font-size: 66px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: #C93510;
+}
+#contact #contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  height: 100%;
+}
+#contact input {
+  width: 400px;
+  height: 60px;
+  position: relative;
+  z-index: 4;
+}
+#contact #contact-details {
+  width: 400px;
+  text-wrap: wrap;
+}
+
 .fade {
   transition: opacity 0.2s ease-in-out;
   opacity: 1;
