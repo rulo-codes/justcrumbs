@@ -156,7 +156,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   width: 100vw;
-  height: 100vh;
+  height: 110vh;
   position: relative;
   justify-content: center;
 }
@@ -281,13 +281,55 @@ a:hover {
 }
 
 #about {
-  height: 99vh;
+  height: 100vh;
   width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   background-color: #D9A74A;
   position: relative;
-  margin-top: 40px;
+  padding: 50px 80px;
+}
+#about #about-content {
+  width: 990px;
+  height: 100%;
+  margin-right: 120px;
+}
+#about h1 {
+  font-family: "Binate-Bold", serif;
+  color: #251507;
+  font-size: 60px;
+  margin: 70px 0px;
+  width: 100%;
+  color: #C93510;
+  height: auto;
+}
+#about p {
+  width: 980px;
+  height: 100%;
+  font-family: "Roboto", serif;
+  font-size: 34px;
+  text-align: justify;
+  line-height: 60px;
+}
+#about img {
+  width: 600px;
+  height: 600px;
+  background-color: #FFF8F8;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
+.fade {
+  transition: opacity 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+/*Responsive Screen Settings*/
 @media screen and (max-width: 1000px) {
   #nav-list li {
     margin: 0px 20px;

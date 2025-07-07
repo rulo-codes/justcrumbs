@@ -6,6 +6,7 @@ const menuCover = document.querySelectorAll('#menu-cover');
 const cookies = document.querySelector(".cookie-cover");
 const coffee = document.querySelector(".coffee-cover");
 const item = document.querySelectorAll(".menu-item");
+const imgElement = document.querySelector("#about-img")
 
 const navlinks = document.querySelectorAll("#nav-link");
 
@@ -98,8 +99,6 @@ menuCover.forEach(div => {
 })
 
 
-
-
 function itemSelect(e){
   console.log(e.target.id);
 }
@@ -107,3 +106,36 @@ function itemSelect(e){
 item.forEach(li => {
   li.addEventListener("mouseover", itemSelect)
 });
+
+
+function scrollImage() {
+  const images = ["../assets/JC013.png", "../assets/JC008.jpg", "../assets/JC002.jpg"];
+  let currentIndex = 0;
+
+
+
+  const changeImg = () => {
+    imgElement.classList.add("fade-out");
+    currentIndex = (currentIndex + 1) % 3;
+    if(currentIndex === 0){
+      imgElement.src = "../assets/JC013.png";
+    }else {
+      imgElement.src = images[currentIndex];
+    }
+    console.log(currentIndex);
+    
+    setTimeout(() => {
+    
+          imgElement.classList.remove("fade-out")
+
+    }, 500);
+      imgElement.classList.add("fade-out");
+
+  }
+
+
+  setInterval(changeImg, 10000);
+
+}
+
+scrollImage();
