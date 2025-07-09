@@ -15,6 +15,19 @@
 }
 
 
+@keyframes fadeBack{
+    0%, 50%{ opacity: 1;}
+  50%, 51% { opacity: 0; }
+  51%, 100% { opacity: 1; }
+}
+
+@keyframes fadeFront{
+  50%, 51% { opacity: 1; }
+  51%, 90% { opacity: 1; }
+  90%, 91% { opacity: 0;}
+}
+
+
 /*Declared Variables*/
 $primary-color: #251507;
 $secondary-color: #D9A74A;
@@ -344,14 +357,43 @@ a:hover{
         line-height: 60px;
     }
 
-    img{
+    #about-img{
         width: 600px;
         height: 600px;
-        background-color: $white;
-        object-fit: cover;
+        position: relative;
     }
 
 }
+
+    .img-placeholder::before, .img-placeholder::after{
+        content: "";
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0;
+    }
+
+    .img-placeholder::before{
+       background: url("../assets/JC013.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        animation: fadeBack 20s ease-in infinite;
+        opacity: 1;
+    }
+
+    .img-placeholder::after{
+        background: url("../assets/JC008.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        animation: fadeFront 20s ease-in infinite;
+        opacity: 0;
+    }
 
 #contact{
     display: flex;
@@ -393,6 +435,7 @@ a:hover{
   transition: opacity 0.2s ease-in-out;
   opacity: 1;
 }
+
 .fade-out {
   opacity: 0;
 }
@@ -500,3 +543,4 @@ a:hover{
 
     }
 }
+
