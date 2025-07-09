@@ -398,9 +398,13 @@ a:hover{
 #contact{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    column-gap: 200px;
     width: 100vw;
     height: 100vh;
     padding: 50px 80px;
+    position: relative;
 
     h1{
         @include primary-header;
@@ -409,25 +413,90 @@ a:hover{
         height: auto;
         text-align: center;
         color: $accent-color;
+        margin: 60px 0px;
     }
 
     #contact-form{
         display: flex;
         flex-direction: column;
-        width: 700px;
+        width: 650px;
         height: 100%;
-    }
-
-    input{
-        width: 400px;
-        height: 60px;
-        position: relative;
-        z-index: 4;
+        margin-top: 50px;
     }
 
     #contact-details{
-        width: 400px;
+        width: 500px;
         text-wrap: wrap;
+        font-family: $font-primary;
+        color: $primary-color;
+        font-size: 24px;
+        margin-top: 50px;
+    }
+
+    form{
+        font-family: $font-primary;
+        color: $primary-color;
+        font-weight: 900;
+        font-size: 20px;
+    }
+
+    label{
+                    
+        position: absolute;
+        top: 0;
+        left: 300px;
+        z-index: 3;
+    }
+
+    #label-name{
+        top: 338px;
+
+    }
+
+    #label-email{
+        top: 396px;
+   
+    }
+
+    #label-phone{
+        top: 454px;
+
+    }
+
+    #label-message{
+        top: 512px;
+
+    }
+
+    .contact-input{
+        width: 100%;
+        height: 38px;
+        margin: 10px 0px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .contact-message{
+        width: 100%;
+        height: 200px;
+        margin: 10px 0px;
+        z-index: 2;
+
+    }
+
+    .contact-submit{
+        all: unset;
+        cursor: pointer;
+        width: 180px;
+        height: 55px;
+        margin-top: 40px;
+        background-color: $secondary-color;
+        font-family: $font-primary;
+        font-size: 18px;
+        text-align: center;
+        color: $primary-color;
+        letter-spacing: 2px;
+        border-radius: 50px;
     }
 }
 

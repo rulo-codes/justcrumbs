@@ -374,9 +374,14 @@ a:hover {
 #contact {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  -moz-column-gap: 200px;
+       column-gap: 200px;
   width: 100vw;
   height: 100vh;
   padding: 50px 80px;
+  position: relative;
 }
 #contact h1 {
   font-family: "Binate-Bold", serif;
@@ -386,22 +391,73 @@ a:hover {
   height: auto;
   text-align: center;
   color: #C93510;
+  margin: 60px 0px;
 }
 #contact #contact-form {
   display: flex;
   flex-direction: column;
-  width: 700px;
+  width: 650px;
   height: 100%;
-}
-#contact input {
-  width: 400px;
-  height: 60px;
-  position: relative;
-  z-index: 4;
+  margin-top: 50px;
 }
 #contact #contact-details {
-  width: 400px;
+  width: 500px;
   text-wrap: wrap;
+  font-family: "Binate", serif;
+  color: #251507;
+  font-size: 24px;
+  margin-top: 50px;
+}
+#contact form {
+  font-family: "Binate", serif;
+  color: #251507;
+  font-weight: 900;
+  font-size: 20px;
+}
+#contact label {
+  position: absolute;
+  top: 0;
+  left: 300px;
+  z-index: 3;
+}
+#contact #label-name {
+  top: 338px;
+}
+#contact #label-email {
+  top: 396px;
+}
+#contact #label-phone {
+  top: 454px;
+}
+#contact #label-message {
+  top: 512px;
+}
+#contact .contact-input {
+  width: 100%;
+  height: 38px;
+  margin: 10px 0px;
+  position: relative;
+  z-index: 2;
+}
+#contact .contact-message {
+  width: 100%;
+  height: 200px;
+  margin: 10px 0px;
+  z-index: 2;
+}
+#contact .contact-submit {
+  all: unset;
+  cursor: pointer;
+  width: 180px;
+  height: 55px;
+  margin-top: 40px;
+  background-color: #D9A74A;
+  font-family: "Binate", serif;
+  font-size: 18px;
+  text-align: center;
+  color: #251507;
+  letter-spacing: 2px;
+  border-radius: 50px;
 }
 
 .fade {

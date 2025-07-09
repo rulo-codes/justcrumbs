@@ -71,28 +71,34 @@
         <div id="about-img" class="img-placeholder fade" alt="image showcase of store and products"></div>
     </div>
     <div id="contact">
-        <h1>CONCTACT US</h1>
+        <h1>Contact Us</h1>
         <form id="contact-form">
-            <label>Name:</label>
-            <input type="text" placeholder="Name">
+            <label id="label-name" for="name" >Name:</label>
+            <input id="name" name="name"" type="text" class="contact-input">
 
-            <label>Email:</label>
-            <input type="email" placeholder="Email">
+            <label id="label-email" for="email">Email:</label>
+            <input id="email" name="email" type="email" class="contact-input">
 
-            <label>Phone:</label>
-            <input type="tel" pattern="[0-9]{11}" placeholder="Phone Number">
+            <label id="label-phone" for="phone">Phone:</label>
+            <input id="phone" name="phone" type="tel" pattern="[0-9]{11}" " class="contact-input">
 
-            <label>Message</label>
-            <textarea name="comment" cols="50" rows="30"></textarea>
+            <label id="label-message" for="message">Message</label>
+            <textarea id="message" name="message" name="comment" class="contact-message"></textarea>
 
-            <button type="submit">Send Message</button>
+            <button type="submit" class="contact-submit">Send Message</button>
             
         </form>
         <div id="contact-details">
             <span>Store Hours: 8 AM - 6 PM</span>
+            <br />
             <span><i></i>contact@example.justcrumbs.com</span>
+            <br />
             <span><i></i> (+63) 928-282-2882</span>
+            <br />
             <span><a>Request Quote</a></span>
+            <br />
+            <br />
+            <br />
             <span>Addres: </span>
             <span>1237 Maple Street, Barangay Laging Handa, Quezon City, Metro Manila, 1103, Philippines</span>
         </div>
