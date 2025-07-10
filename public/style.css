@@ -167,7 +167,7 @@ a:hover {
   padding-bottom: 10px;
 }
 
-#sub-headline {
+.sub-headline {
   font-family: "Binate-Bold", serif;
   color: #251507;
   font-size: 20px;
@@ -397,7 +397,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   width: 650px;
-  height: 100%;
+  height: auto;
   margin-top: 50px;
 }
 #contact #contact-details {
@@ -415,22 +415,7 @@ a:hover {
   font-size: 20px;
 }
 #contact label {
-  position: absolute;
-  top: 0;
-  left: 300px;
-  z-index: 3;
-}
-#contact #label-name {
-  top: 338px;
-}
-#contact #label-email {
-  top: 396px;
-}
-#contact #label-phone {
-  top: 454px;
-}
-#contact #label-message {
-  top: 512px;
+  display: none;
 }
 #contact .contact-input {
   width: 100%;
@@ -445,6 +430,18 @@ a:hover {
   margin: 10px 0px;
   z-index: 2;
 }
+#contact .contact-input::-moz-placeholder, #contact .contact-message::-moz-placeholder {
+  font-family: "Binate", serif;
+  font-size: 20px;
+  font-weight: 900;
+  padding: 0px 10px;
+}
+#contact .contact-input::placeholder, #contact .contact-message::placeholder {
+  font-family: "Binate", serif;
+  font-size: 20px;
+  font-weight: 900;
+  padding: 0px 10px;
+}
 #contact .contact-submit {
   all: unset;
   cursor: pointer;
@@ -454,10 +451,17 @@ a:hover {
   background-color: #D9A74A;
   font-family: "Binate", serif;
   font-size: 18px;
+  font-weight: 900;
   text-align: center;
   color: #251507;
   letter-spacing: 2px;
   border-radius: 50px;
+}
+
+#footer {
+  width: 100vw;
+  height: 100px;
+  background: #8a8a8a;
 }
 
 .fade {

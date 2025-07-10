@@ -27,7 +27,7 @@
     <div id="hero">
         <h2 id="headline">Where there are <span class="highlight">crumbs</span>, there once was a cookie <span class="highlight">worth savoring</span></h2>
         <button id="cta-button">ORDER NOW</button>
-        <div id="sub-headline">JUSTCRUMBS | Cookies & Coffee</div>
+        <div class="sub-headline">JUSTCRUMBS | Cookies & Coffee</div>
         <div id="bg-img"></div>
     </div>
     <div id="basket">
@@ -74,16 +74,16 @@
         <h1>Contact Us</h1>
         <form id="contact-form">
             <label id="label-name" for="name" >Name:</label>
-            <input id="name" name="name"" type="text" class="contact-input">
+            <input id="name" name="name"" type="text" class="contact-input" placeholder="Name">
 
             <label id="label-email" for="email">Email:</label>
-            <input id="email" name="email" type="email" class="contact-input">
+            <input id="email" name="email" type="email" class="contact-input" placeholder="Email">
 
             <label id="label-phone" for="phone">Phone:</label>
-            <input id="phone" name="phone" type="tel" pattern="[0-9]{11}" " class="contact-input">
+            <input id="phone" name="phone" type="tel" pattern="[0-9]{11}" " class="contact-input" placeholder="Phone">
 
             <label id="label-message" for="message">Message</label>
-            <textarea id="message" name="message" name="comment" class="contact-message"></textarea>
+            <textarea id="message" name="message" name="comment" class="contact-message" placeholder="Message"></textarea>
 
             <button type="submit" class="contact-submit">Send Message</button>
             
@@ -103,7 +103,14 @@
             <span>1237 Maple Street, Barangay Laging Handa, Quezon City, Metro Manila, 1103, Philippines</span>
         </div>
     </div>
-    <div id="footer"></div>
+    <div id="footer">
+        <div class="sub-headline">JUSTCRUMBS | <span class="sub-text">Cookies & Coffee</span></div>
+        <span>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-regular fa-message"></i>
+        </span>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

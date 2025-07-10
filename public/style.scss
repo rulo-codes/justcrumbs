@@ -186,7 +186,7 @@ a:hover{
     padding-bottom: 10px;
 }
 
-#sub-headline{
+.sub-headline{
     @include primary-header;
     font-size: 20px;
     text-align: center;
@@ -420,7 +420,7 @@ a:hover{
         display: flex;
         flex-direction: column;
         width: 650px;
-        height: 100%;
+        height: auto;
         margin-top: 50px;
     }
 
@@ -441,31 +441,7 @@ a:hover{
     }
 
     label{
-                    
-        position: absolute;
-        top: 0;
-        left: 300px;
-        z-index: 3;
-    }
-
-    #label-name{
-        top: 338px;
-
-    }
-
-    #label-email{
-        top: 396px;
-   
-    }
-
-    #label-phone{
-        top: 454px;
-
-    }
-
-    #label-message{
-        top: 512px;
-
+        display: none;
     }
 
     .contact-input{
@@ -484,6 +460,13 @@ a:hover{
 
     }
 
+    .contact-input::placeholder, .contact-message::placeholder{
+        font-family: $font-primary;
+        font-size: 20px;
+        font-weight: 900;
+        padding: 0px 10px;
+    }
+
     .contact-submit{
         all: unset;
         cursor: pointer;
@@ -493,11 +476,18 @@ a:hover{
         background-color: $secondary-color;
         font-family: $font-primary;
         font-size: 18px;
+        font-weight: 900;
         text-align: center;
         color: $primary-color;
         letter-spacing: 2px;
         border-radius: 50px;
     }
+}
+
+#footer{
+    width: 100vw;
+    height: 100px;
+    background: #8a8a8a;
 }
 
 .fade {
