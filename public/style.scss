@@ -190,6 +190,11 @@ a:hover{
     @include primary-header;
     font-size: 20px;
     text-align: center;
+    
+}
+
+.sub-text{
+    font-family: $font-secondary;
 }
 
 #basket{
@@ -416,6 +421,10 @@ a:hover{
         margin: 60px 0px;
     }
 
+    i{
+        margin-right: 10px;
+    }
+
     #contact-form{
         display: flex;
         flex-direction: column;
@@ -487,7 +496,30 @@ a:hover{
 #footer{
     width: 100vw;
     height: 100px;
+    display: flex;
+    align-items: center;
     background: #8a8a8a;
+    font-size: 28px;
+
+    #footer-headline{
+        width: 50%;
+        font-size: 28px;
+    }
+    #contacts{
+        display: flex;
+        width: 50%;
+        justify-content: center;
+
+        i{
+            color: $primary-color;
+            font-size: 34px;
+            margin: 0px 20px;
+        }
+        i:hover{
+            color: #614a35;
+        }
+    }
+
 }
 
 .fade {
