@@ -167,6 +167,11 @@ a:hover {
   padding-bottom: 10px;
 }
 
+#hero button:hover {
+  transform: scale(1.05);
+  border: 2px solid #FFFFFF;
+}
+
 .sub-headline {
   font-family: "Binate-Bold", serif;
   color: #251507;
@@ -351,6 +356,7 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%;
+  border-radius: inherit;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -359,6 +365,7 @@ a:hover {
 
 .img-placeholder::before {
   background: url("../assets/JC013.png");
+  border-radius: inherit;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -368,6 +375,7 @@ a:hover {
 
 .img-placeholder::after {
   background: url("../assets/JC008.jpg");
+  border-radius: inherit;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -427,14 +435,22 @@ a:hover {
 #contact .contact-input {
   width: 100%;
   height: 38px;
-  margin: 10px 0px;
+  font-family: "Roboto", serif;
+  font-size: 20px;
+  color: "Binate", serif;
   position: relative;
+  margin: 10px 0px;
+  padding: 0px 5px;
   z-index: 2;
 }
 #contact .contact-message {
   width: 100%;
   height: 200px;
+  font-family: "Roboto", serif;
+  font-size: 20px;
+  color: "Binate", serif;
   margin: 10px 0px;
+  padding: 5px 5px;
   z-index: 2;
 }
 #contact .contact-input::-moz-placeholder, #contact .contact-message::-moz-placeholder {
@@ -463,6 +479,10 @@ a:hover {
   color: #251507;
   letter-spacing: 2px;
   border-radius: 50px;
+}
+#contact .underline {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 #footer {
@@ -501,44 +521,135 @@ a:hover {
 }
 
 /*Responsive Screen Settings*/
-@media screen and (max-width: 1000px) {
-  #nav-list li {
-    margin: 0px 20px;
+@media screen and (max-width: 1200px) {
+  #header ul {
+    margin-right: 20px;
+  }
+  #header li {
+    margin: 0px 14px;
+    font-size: 18px;
+  }
+  #hero #headline {
+    width: 850px;
+    font-size: 55px;
+  }
+  #hero button {
+    width: 250px;
+    height: 60px;
+    font-size: 26px;
+  }
+  .sub-headline {
+    font-size: 22px;
+  }
+  #basket {
+    height: auto;
+  }
+  #basket h1 {
+    font-size: 55px;
+  }
+  #basket h3 {
+    font-size: 42px;
+  }
+  #basket ul {
+    margin-top: 20px;
+    font-size: 22px;
+    line-height: 50px;
+  }
+  #basket .menu-placeholder {
+    width: 580px;
+    height: 600px;
+    margin: 30px;
+    padding: 40px;
+    border-radius: 38px;
+  }
+  #about {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+    height: 1600px;
+    margin-top: 80px;
+    padding: 20px 80px;
+  }
+  #about #about-content {
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+  #about #about-content h1 {
+    font-size: 46px;
+    margin: 50px 0px;
+  }
+  #about #about-content p {
+    width: 100%;
+  }
+  #about #about-img {
+    width: 500px;
+    height: 500px;
+    margin: 80px 0px;
+    border-radius: 50%;
+  }
+  #contact {
+    height: auto;
+  }
+  #contact #about-content {
+    padding: 0px;
+    margin-bottom: 40px;
+  }
+  #footer {
+    justify-content: center;
+    font-size: 22px;
+  }
+  #footer #footer-headline {
+    font-size: 24px;
+  }
+  #footer #contacts i {
+    font-size: 30px;
+    margin: 0px 15px;
   }
 }
 @media screen and (max-width: 760px) {
-  #burger {
+  #header {
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 100;
+  }
+  #header li {
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+    margin: 40px 0px;
+  }
+  #header #burger {
     display: flex;
     -webkit-user-select: none;
        -moz-user-select: none;
             user-select: none;
   }
-  #nav-list ul {
+  #header #nav-list ul {
     display: none;
     justify-content: center;
     align-items: center;
   }
-  #nav-list ul.nav-menu {
+  #header #nav-list ul.nav-menu {
     display: flex;
   }
-  #nav-list li {
-    margin: 40px 0;
-    font-size: 30px;
-  }
-  #brand {
+  #header #brand {
     width: 340px;
   }
-  #brand h1 {
+  #header #brand h1 {
     font-size: 30px;
     margin-right: 35px;
     margin-top: 5px;
   }
-  #brand #logo {
+  #header #brand #logo {
     width: 80px;
     margin-top: 7px;
     margin-left: 10px;
   }
-  .nav-menu {
+  #header .nav-menu {
     flex-direction: column;
     align-items: center;
     background: #d9a74a;
@@ -549,15 +660,18 @@ a:hover {
     left: 0;
     z-index: 5;
   }
-  #headline {
+  #hero {
+    margin-top: 100px;
+  }
+  #hero #headline {
     width: 90%;
     font-size: 50px;
-    line-height: 70px;
-    letter-spacing: normal;
+    line-height: 80px;
   }
   #hero button {
-    scale: 0.7;
-    margin: 40px auto;
+    width: 250px;
+    height: 60px;
+    font-size: 26px;
   }
   #basket {
     height: auto;
@@ -582,5 +696,27 @@ a:hover {
   }
   #basket #menu-cover {
     font-size: 40px;
+  }
+  #about #about-content h1 {
+    font-size: 40px;
+  }
+  #about #about-content p {
+    font-size: 24px;
+    line-height: 50px;
+  }
+  #about #about-img {
+    width: 400px;
+    height: 400px;
+  }
+  #footer #footer-headline {
+    text-align: start;
+    width: 180px;
+    font-size: 20px;
+  }
+  #footer #footer-headline .sub-text {
+    margin-left: 30px;
+  }
+  #footer #contacts {
+    justify-content: flex-end;
   }
 }/*# sourceMappingURL=style.css.map */
