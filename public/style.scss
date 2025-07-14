@@ -15,6 +15,13 @@
 }
 
 
+@keyframes fadeOut{
+    10%{ opacity: 1; }
+    50%{ opacity: 1; }
+    60% { opacity: 0; }
+}
+
+
 @keyframes fadeBack{
     0%, 50%{ opacity: 1;}
   50%, 51% { opacity: 0; }
@@ -73,10 +80,14 @@ a:hover{
     display: flex;
     height: 100px;
     width: 100vw;
+    position: fixed;
     justify-content: center;
     align-items: center;
+    top: 0;
+    left: 0;
     background-color: #d9a74a;
     box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.4);
+
     z-index: 5;
 
     #nav-list{
@@ -140,6 +151,7 @@ a:hover{
     height: 98vh;
     background-color: rgba(251, 237, 216, 0.8);
     position: relative;
+    margin-top: 100px;
     padding: 0px 0px;
 
 }
@@ -209,6 +221,7 @@ a:hover{
     height: 110vh;
     position: relative;
     justify-content: center;
+    user-select: none;
 
 
     h1 {
@@ -394,7 +407,11 @@ a:hover{
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        animation: fadeBack 20s ease-in infinite;
+        animation-name: fadeOut;
+        animation-duration: 20s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-delay: 0s;
         opacity: 1;
     }
 
@@ -404,7 +421,11 @@ a:hover{
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        animation: fadeFront 20s ease-in infinite;
+        animation-name: fadeOut;
+        animation-duration: 20s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-delay: 10s;
         opacity: 0;
     }
 

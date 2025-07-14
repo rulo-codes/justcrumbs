@@ -1,4 +1,4 @@
-
+const header = document.querySelector("#header");
 const burger = document.querySelector("#burger");
 const nav = document.querySelector("#navLinks");
 const menuDiv = document.querySelectorAll(".menu-placeholder");
@@ -138,3 +138,20 @@ function scrollImage() {
 
 }
 
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        header.style.boxShadow = "none";
+      } else {
+        header.style.boxShadow = "0px 2px 5px 1px rgba(0, 0, 0, 0.4)";
+      }
+    })
+  }, 
+  {
+    rootMargin: '0px 0px 0px 0px',
+    threshold: 0.1
+  }
+);
+
+observer.observe(document.querySelector("#about"));
