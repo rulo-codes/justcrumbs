@@ -2,14 +2,14 @@
 
 @font-face{
     font-family: 'Binate';
-    src: url('../fonts/BinateDisplay-Regular.woff2');
+    src: url('fonts/BinateDisplay-Regular.woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Binate-Bold';
-    src: url('../fonts/BinateDisplay-Bold.woff2');
+    src: url('fonts/BinateDisplay-Bold.woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -162,7 +162,7 @@ a:hover{
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url("../assets/JC001.jpg");
+    background-image: url("assets/JC001.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0% 25%;
@@ -300,7 +300,7 @@ a:hover{
 .cookie-cover::before{
     content: '';
     background-color: #30261d;
-    background-image: url("../assets/JC004.jpg");
+    background-image: url("assets/JC004.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -318,7 +318,7 @@ a:hover{
 .coffee-cover::before{
     content: '';
     background-color: #30261d;
-    background-image: url("../assets/JC012.jpg");
+    background-image: url("assets/JC012.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -402,7 +402,7 @@ a:hover{
     }
 
     .img-placeholder::before{
-       background: url("../assets/JC013.png");
+       background: url("assets/JC013.png");
        border-radius: inherit;
         background-size: cover;
         background-repeat: no-repeat;
@@ -416,7 +416,7 @@ a:hover{
     }
 
     .img-placeholder::after{
-        background: url("../assets/JC008.jpg");
+        background: url("assets/JC008.jpg");
         border-radius: inherit;
         background-size: cover;
         background-repeat: no-repeat;
@@ -833,9 +833,6 @@ a:hover{
         #contacts{
             justify-content: flex-end;
 
-            i{
-
-            }
         }
 
     }
