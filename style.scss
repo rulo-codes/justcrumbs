@@ -354,17 +354,17 @@ a:hover{
     align-items: center;
     background-color: $secondary-color;
     position: relative;
-    padding: 50px 80px;
+    padding: 50px 100px;
 
     #about-content{
         width: 990px;
         height: 100%;
-        margin-right: 120px;
+        margin-right: 50px;
     }
 
     h1{
         @include primary-header;
-        font-size: 60px;
+        font-size: 50px;
         margin: 70px 0px;
         width: 100%;
         color: $accent-color;
@@ -372,10 +372,10 @@ a:hover{
     }
 
     p{
-        width: 980px;
+        width: 940px;
         height: 100%;
         font-family: $font-secondary;
-        font-size: 34px;
+        font-size: 26px;
         text-align: justify;
         line-height: 60px;
     }
@@ -574,6 +574,42 @@ a:hover{
 }
 
 /*Responsive Screen Settings*/
+
+@media screen and (min-width: 1210px){
+    #basket{
+        min-height: fit-content;
+        max-height: 120vh;
+    }
+    #about{
+        width: 100vw;
+        min-height: auto;
+        max-height: 100vh;
+        #about-content{
+            width: 50%;
+            height: auto;
+            margin: auto 0px;
+            margin-right: calc(10% - 1rem);
+            h1{
+                font-size: clamp(10%, 3rem, 4rem);
+                margin: 5px 0px;
+            }
+           p{
+                 width: 100%;
+                 font-size: clamp(5%, 1.5rem, 3rem);
+           }
+        }
+        #about-img{
+            width: 30vw;
+            height: 30vw;
+            margin: auto 0px;
+        }
+    }
+    #contact{
+        height: auto;
+        column-gap: 10%;
+    }
+}
+
 
 @media screen and (max-width: 1200px) {
 
@@ -800,6 +836,12 @@ a:hover{
     }
 
     #about{
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100vw;
+        height: 1600px;
+
         #about-content{
             h1{
                 font-size: 40px;
